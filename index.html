@@ -123,16 +123,32 @@ My goal is to become a successful Full Stack Developer and create impactful digi
 
   <!-- Contact -->
   <section class="contact" id="contact">
-    <h2 class="heading">Contact Me</h2>
+  <h2 class="heading">Contact Me</h2>
 
-    <div class="contact-container">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea rows="5" placeholder="Your Message"></textarea>
+  <form class="contact-container" onsubmit="return showMessage()">
 
-      <button onclick="showMessage()">Send Message</button>
-    </div>
-  </section>
+    <input 
+      type="text" 
+      placeholder="Your Name" 
+      required
+    >
+
+    <input 
+      type="email" 
+      placeholder="Your Email" 
+      required
+    >
+
+    <textarea 
+      rows="5" 
+      placeholder="Your Message" 
+      required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+</section>
 
   <!-- Footer -->
   <footer>
